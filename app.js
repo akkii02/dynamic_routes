@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 
 const errorController = require('./controllers/error');
 const db = require("./util/database");
-db.execute('SELECT * FROM products');
 
 const app = express();
 
