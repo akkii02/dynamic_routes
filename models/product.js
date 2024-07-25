@@ -21,6 +21,9 @@ module.exports = class Product {
     return db.execute("DELETE FROM products WHERE products.id = ?", [id]);
   }
 
+
+  
+
   static fetchAll() {
     return db.execute("SELECT * FROM products");
   }
